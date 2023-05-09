@@ -1,0 +1,415 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: arial;
+  color: white;
+  background-color: #22252c;  
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  margin-bottom: 0;
+}
+@media screen and (max-width: 992px) {
+  .main_image {
+    display: none;
+  }
+  .sub_interest_icon {
+    margin: 30px;
+  }
+  .sub_header_menu{
+    display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .bar_icon{
+    display: none;
+  }
+}
+:root {
+  --animate-duration: 1500ms;
+  --animate-delay: 0.9s;
+}
+
+
+/* ############################### NAVBAR ######################### */
+.top_header {
+  background: -webkit-linear-gradient(right, #07f7f7, #00f298);
+  box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.27);
+}
+.text_hello {
+  font-size: 120px;
+}
+.text_tarang {
+  font-size: 84px;
+}
+
+.text_react {
+  font-size: 25px;
+  /* width: 20px;
+  overflow: hidden; */
+}
+.sub_header_menu ul li{
+  list-style: none;
+  
+}
+.sub_header_menu ul li a{
+  text-decoration: none;
+}
+.sub_header_menu ul li a:hover{
+  text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+/* ############################### END NAVBAR ######################### */
+
+/* ############################### HOME ######################### */
+.main_home {
+  height: 100vh;
+}
+.main_home_text {
+  top: 50%;
+  transform: translateY(calc(-50%));
+
+}
+.text_hello{
+  animation: text 1s linear;
+}
+@keyframes text{
+  0%{
+    transform: translate(0px, 0px);
+  }
+  25%{
+    transform: translate(100px, 0px);
+  }
+  50%{
+    transform: translate(100px, 50px);
+  }
+  70%{
+    transform: translate(0px, 50px);
+  }
+  100%{
+    transform: translate(0px, 0px);
+  }
+
+}
+/* ############################### END HOME ######################### */
+
+/* ############################### ABOUT ######################### */
+.main_about {
+  background-color: #22252c;
+  padding-bottom: 170px;
+}
+.sub_about {
+  padding: 140px 0px;
+}
+.border_image {
+  height: 385px;
+  width: 365px;
+  background-color: #22252c;
+  border: 7px solid #00d7bb;
+  margin-left: 80px;
+}
+.profile_image {
+  height: 385px;
+  width: 365px;
+  margin-left: -60px;
+  margin-top: 50px;
+  /* animation: proImage .9s linear ;
+  animation-delay: 2s; */
+}
+/* @keyframes proImage {
+  0%{
+    transform: rotate(0deg);
+  }
+  10%{
+    transform: rotate(32deg);
+  }
+  20%{
+    transform: rotate(64deg);
+  }
+  30%{
+    transform: rotate(96deg);
+  }
+  40%{
+    transform: rotate(128deg);
+  }
+  50%{
+    transform: rotate(160deg);
+  }
+  60%{
+    transform: rotate(192deg);
+  }
+  70%{
+    transform: rotate(234deg);
+  }
+  80%{
+    transform: rotate(276deg);
+  }
+  90%{
+    transform: rotate(310deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+
+} */
+.resume_button button {
+  background: linear-gradient(to right, #17d396, #07f7f7);
+  -webkit-box-shadow: 0 0 20px rgba(22, 213, 156, 0.7);
+  box-shadow: 0 0 20px rgba(22, 213, 156, 0.7);
+  font-size: 14px;
+}
+.about_heading,
+.interest_heading {
+  font-size: 45px;
+  background: -webkit-linear-gradient(left, #00f298, #07f7f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+  font-weight: 700;
+}
+.about_details span {
+  color: #00d7bb;
+  font-size: 18px;
+}
+.details_name {
+  font-size: 18px;
+}
+.interest_heading {
+  font-size: 35px;
+}
+.sub_interest_icon {
+  font-size: 44px;
+  border: 2px solid #00d7bb;
+  color: #00d7bb;
+  height: 90px;
+  width: 90px;
+}
+.interest_text {
+  display: none;
+}
+.sub_interest_icon:hover .interest_text {
+  display: block;
+  transition: 0.5s !important;
+}
+.sub_interest_icon:hover {
+  background: linear-gradient(to bottom, hwb(161 9% 17%), #07f7f7);
+  color: white;
+  transition: 0.4s;
+}
+/* ############################### END ABOUT ######################### */
+
+/* ############################### EDUCATION ######################### */
+.main_image {
+  height: 1300px;
+  width: 100px;
+  margin-left: 45px;
+}
+.sub_education {
+  padding: 170px 0px;
+}
+.education_heading {
+  margin-bottom: 170px;
+}
+.main_education {
+  background-color: #313741;
+}
+.bca {
+  text-transform: uppercase;
+  font-size: 27px;
+  color: #00d7bb;
+}
+.education_year {
+  font-size: 20px;
+}
+.sub_main_content {
+  margin-top: 250px;
+}
+.hsc_sub_content {
+  padding-top: 250px;
+}
+.right_education_content {
+  margin-top: 345px;
+}
+/* ############################### END EDUCATION ######################### */
+
+/* ############################### SKILLS ######################### */
+.sub_skills {
+  padding: 170px 0px;
+}
+.single_slider input {
+  width: 500px;
+}
+.html_covrage {
+  margin-left: 370px;
+}
+.text_html {
+  font-size: 19px;
+}
+.react_ {
+  margin-left: 255px;
+}
+.html_ {
+  margin-left: 355px;
+}
+.css_ {
+  margin-left: 349px;
+}
+.javascript_ {
+  margin-left: 255px;
+}
+.c_ {
+  margin-left: 170px;
+}
+.web_ {
+  margin-left: 295px;
+}
+.ui_ {
+  margin-left: 136px;
+}
+.pho_ {
+  margin-left: 317px;
+}
+
+/* ############################### END SKILLS ######################### */
+
+/* ############################### TESTIMONIAL ######################### */
+.main_testimonial {
+  background-color: #313741;
+  padding: 170px 0px;
+}
+.spe_bg {
+  background-color: #00d7bb;
+  /* height: 500px; */
+  z-index: 2;
+  transform: scale(1.1);
+}
+.field {
+  color: #212529;
+}
+.number {
+  color: #212529;
+}
+.field_2 {
+  color: #00d7bb;
+}
+/* ############################### ENS TESTIMONIAL ######################### */
+
+/* ############################### WORK ######################### */
+.main_head_work {
+  padding-top: 170px;
+}
+.main_work_image {
+  background: -webkit-linear-gradient(left, #00f298, #07f7f7);
+}
+.work_button button {
+  background-color: #212529;
+  color: #00d7bb;
+}
+.work_button button:hover {
+  color: white;
+  background: none;
+}
+.hover_text{
+  display: none;
+ color: #00d7bb; 
+}
+.single_work_image:hover .hover_text{
+  transition: .6s;
+  margin-top: -40px;
+  margin-left: 25px;
+  display: block;
+  cursor: pointer;
+  
+}
+/* ############################### END WORK ######################### */
+
+/* ############################### CONTACT ######################### */
+.name_form input{
+  background: none;
+  border: none;
+  border-bottom: 1px solid gray;
+  width: 500px;
+}
+.sub_msg input{
+  border: none;
+  background: none;
+  border-bottom: 1px solid gray;
+  width: 100%;
+}
+.main_msg,.main_hr{
+  
+  padding: 0px 120px;
+}
+.last_button button{
+  margin-top: 100px;
+  background: none;
+  border: 1px solid   #00d7bb;
+  color: #00d7bb;
+}
+.last_button button:hover{
+  background: linear-gradient(to right, #17d396, #07f7f7);
+  -webkit-box-shadow: 0 0 20px rgba(22, 213, 156, 0.7);
+  box-shadow: 0 0 20px rgba(22, 213, 156, 0.7);
+  color: white;
+}
+.single_last_icon{
+  background-color: #313741;
+  height: 70px;
+  width: 70px ;
+  color: #00d7bb;
+  transition: .4s;
+}
+.single_last_icon:hover{
+  color: #313741 ;
+  background-color: #00d7bb;
+}
+.main_last_icon{
+  padding: 100px 0;
+}
+.main_last_text{
+  color: #00d7bb;
+}
+/* ############################### END CONTACT ######################### */
+
+.progress {
+  /* background: linear-gradient(to right, #00d7bb 0%, #00d7bb 40%, #fff 40%, #fff 100%); */
+  background-color: #00d7bb;
+  border: solid 2px #82CFD0;
+  border-radius: 8px;
+  height: 7px;
+  width: 300px;
+  outline: none;
+  transition: background 450ms ease-in;
+  -webkit-appearance: none;
+}
+
+.progress::-webkit-slider-thumb {
+  width: 20px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  cursor: ew-resize;
+  background: #ffffff;
+} 
+
+
+.main_scroll{
+  height: 50px;
+  width: 50px;
+   border-radius: 30px;
+  background-color:#00d7bb;
+  position: fixed;
+  top: 85%;
+  right: 4%;
+  z-index: 5;
+}
